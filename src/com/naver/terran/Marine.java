@@ -2,20 +2,23 @@ package com.naver.terran;
 
 import com.naver.unit.Unit;
 
-public abstract class Marine extends Unit
+public class Marine extends Unit
 {
 	private String weapon;
 
 	public Marine()
 	{
-		System.out.println("Marine 생성자");
+		super(30);
 	}
 
-	// over riding
-	public void Move()
+	public String getWeapon()
 	{
-		super.info();
-		System.out.println("뛰어다님");
+		return weapon;
+	}
+
+	public void setWeapon(String weapon)
+	{
+		this.weapon = weapon;
 	}
 
 	// 오버 라이딩
@@ -27,5 +30,12 @@ public abstract class Marine extends Unit
 	public void shot()
 	{
 		System.out.println("탕탕");
+	}
+
+	// over riding
+	public void move()
+	{
+		super.info();
+		System.out.println("뛰어다님");
 	}
 }
