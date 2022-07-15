@@ -1,6 +1,6 @@
 package com.naver.unit;
 
-public abstract class SkyUnit extends Unit
+public class SkyUnit extends Unit
 {
 	private int wings;
 

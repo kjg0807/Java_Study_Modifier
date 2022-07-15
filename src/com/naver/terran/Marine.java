@@ -1,8 +1,9 @@
 package com.naver.terran;
 
+import com.naver.unit.Attacker;
 import com.naver.unit.Unit;
 
-public class Marine extends Unit
+public class Marine extends Unit implements Attacker
 {
 	private String weapon;
 
@@ -27,7 +28,7 @@ public class Marine extends Unit
 		System.out.println("Marine Info");
 	}
 
-	public void shot()
+	private void shot()
 	{
 		System.out.println("탕탕");
 	}
@@ -37,5 +38,12 @@ public class Marine extends Unit
 	{
 		super.info();
 		System.out.println("뛰어다님");
+	}
+
+	@Override
+	public void attack()
+	{
+		// TODO Auto-generated method stub
+		
 	}
 }

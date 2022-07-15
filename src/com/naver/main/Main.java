@@ -13,12 +13,9 @@ public class Main
 		// Marine is a Unit
 
 		Unit unit = m1;
-		System.out.println(unit.getHp());
-		System.out.println(unit.getColor());
-		System.out.println(unit.getName());		
+		Hydra hydra = new Hydra();
 
-		m1 = (Marine) unit;
-		
-		System.out.println(m1.getWeapon());
+		m1.attack();
+		hydra.attack();
 	}
 }

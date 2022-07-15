@@ -2,8 +2,14 @@ package com.naver.terran;
 
 import com.naver.unit.Unit;
 
-public abstract class Scv extends Unit
+public class Scv extends Unit
 {
+	public Scv()
+	{
+		super(15);
+		// TODO Auto-generated constructor stub
+	}
+
 	// over riding
 	public void move()
 	{
