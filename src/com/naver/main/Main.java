@@ -19,6 +19,6 @@ public class Main
 
 		Client client = new Client();
 
-		client.buy(com);
+		client.buy(tv);
 	}
 }

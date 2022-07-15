@@ -11,10 +11,10 @@ public class Client extends Product // 구매자
 		this.point = 10;
 	}
 
-	public void buy(TV tv) // 물건 값 계산
+	public void buy(Product product) // 물건 값 계산
 	{
-		this.money = this.money - tv.getPrice();
-		this.point = this.point + tv.getPoint();
+		this.money = this.money - product.getPrice();
+		this.point = this.point + product.getPoint();
 		System.out.println("");
 		System.out.println("잔액: " + this.money);
 		System.out.println("Point: " + this.point);
