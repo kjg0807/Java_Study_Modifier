@@ -1,15 +1,24 @@
 package com.naver.main;
 
-import com.naver.terran.Marine;
-import com.naver.zerg.Hydra;
-import com.naver.unit.Unit;
+import com.naver.Himart.Client;
+import com.naver.Himart.Computer;
+import com.naver.Himart.Phone;
+import com.naver.Himart.TV;
 
 public class Main
 {
-
 	public static void main(String[] args)
 	{
-		Marine m1 = new Marine();
-		m1.setHp(20);
+		Computer com = new Computer();
+		Phone ph = new Phone();
+		TV tv = new TV();
+
+		com.info();
+		ph.info();
+		tv.info();
+
+		Client client = new Client();
+
+		client.buy(com);
 	}
 }
