@@ -1,24 +1,15 @@
 package com.naver.main;
 
-import com.naver.animal.Human;
-import com.naver.animal.Zoo;
+import com.naver.terran.Marine;
+import com.naver.zerg.Hydra;
+import com.naver.unit.Unit;
 
 public class Main
 {
 
 	public static void main(String[] args)
 	{
-		// Cat cat = new Cat();
-		// cat.sound();
-		// cat.age = 5;
-		Human human = new Human();
-		human.setAge(300);
-		human.info();
-		// -----------------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
-
-		Zoo zoo = new Zoo();
-		//zoo.price = 10000;
+		Marine m1 = new Marine();
+		m1.setHp(20);
 	}
 }
