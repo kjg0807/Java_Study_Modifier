@@ -4,6 +4,8 @@ public class Iu
 {
 	private String name;
 	private int age;
+	//fix_Study
+	private String test;
 
 	// Setter - public void set변수명(데이터 타입 변수명) { 내용 }
 	// Getter - public 리턴타입 get변수명(데이터 타입 변수명) { 내용 }
